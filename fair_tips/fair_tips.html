@@ -6,7 +6,8 @@
   <title>Fair Tips — Waiwai</title>
   <meta name="description" content="Fair Tips: automatically detect your sales tax rate by location and calculate tips on the pre-tax bill. Available on the App Store." />
   <link rel="icon" href="/assets/website/favicon.png" type="image/png" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="app-theme.css" />
   <style>
     /* ── FAIR TIPS PAGE-SPECIFIC STYLES ── */
 
@@ -23,7 +24,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse at 50% 20%, #7a5237 0%, var(--ink) 65%);
+      background: radial-gradient(ellipse at 50% 20%, #5f9a63 0%, var(--ink) 65%);
       opacity: .85;
     }
 
@@ -39,7 +40,7 @@
       font-weight: 500;
       letter-spacing: .18em;
       text-transform: uppercase;
-      color: var(--accent);
+      color: #9ecb86;
       margin-bottom: 1rem;
     }
 
@@ -54,11 +55,11 @@
 
     .ft-hero h1 em {
       font-style: italic;
-      color: var(--accent);
+      color: #a9d492;
     }
 
     .ft-hero-sub {
-      color: #e0d0bf;
+      color: #c7dab5;
       font-size: 1.1rem;
       line-height: 1.75;
       margin-bottom: 2.4rem;
@@ -89,7 +90,7 @@
       transition: background .2s, transform .15s;
     }
 
-    .btn-appstore:hover { background: #e8e1d4; transform: translateY(-2px); }
+    .btn-appstore:hover { background: #dbe8c9; transform: translateY(-2px); }
 
     .btn-appstore svg {
       width: 20px;
@@ -256,7 +257,7 @@
     }
 
     .ft-cta-strip p {
-      color: #e0d0bf;
+      color: #c7dab5;
       font-size: 1.05rem;
       margin-bottom: 2.2rem;
       font-weight: 300;
@@ -288,11 +289,11 @@
 <body>
 
   <nav>
-    <a class="nav-logo" href="index.html">Wai<span>wai</span></a>
+    <a class="nav-logo" href="../index.html"><img class="nav-logo-icon" src="../assets/website/icon-1254x1254.png" alt="Waiwai Studio logo" /><span class="nav-logo-text">Waiwai<span>Studio</span></span></a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
+      <li><a href="../index.html">Home</a></li>
       <li><a href="fair_tips.html" class="active">Fair Tips</a></li>
-      <li><a href="wholistic.html">Wholistic</a></li>
+      <li><a href="../wholistic/wholistic.html">Wholistic</a></li>
     </ul>
   </nav>
 
@@ -319,7 +320,7 @@
       <!-- Screenshots row -->
       <div class="ft-hero-screens fade-up fade-up-d3">
         <div class="ft-phone center">
-          <img src="assets/fair_tips/screenshot-full.png" alt="Fair Tips full app view" />
+          <img src="../assets/fair_tips/screenshot-full.png" alt="Fair Tips full app view" />
         </div>
       </div>
     </section>
@@ -370,7 +371,7 @@
         <!-- Feature 1 -->
         <div class="ft-showcase-row">
           <div class="ft-showcase-img">
-            <img src="assets/fair_tips/screenshot-price-input.png" alt="Entering the bill amount" />
+            <img src="../assets/fair_tips/screenshot-price-input.png" alt="Entering the bill amount" />
           </div>
           <div class="ft-showcase-text">
             <p class="section-label">Feature 01</p>
@@ -386,7 +387,7 @@
         <!-- Feature 2 -->
         <div class="ft-showcase-row reverse">
           <div class="ft-showcase-img">
-            <img src="assets/fair_tips/screenshot-tax.png" alt="Automatic tax rate detection" />
+            <img src="../assets/fair_tips/screenshot-tax.png" alt="Automatic tax rate detection" />
           </div>
           <div class="ft-showcase-text">
             <p class="section-label">Feature 02</p>
@@ -402,7 +403,7 @@
         <!-- Feature 3 -->
         <div class="ft-showcase-row">
           <div class="ft-showcase-img">
-            <img src="assets/fair_tips/screenshot-summary.png" alt="Clean tip summary" />
+            <img src="../assets/fair_tips/screenshot-summary.png" alt="Clean tip summary" />
           </div>
           <div class="ft-showcase-text">
             <p class="section-label">Feature 03</p>
@@ -468,7 +469,7 @@
     </p>
   </footer>
 
-  <script src="js/nav.js"></script>
+  <script src="../js/nav.js"></script>
   <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
 </body>
 </html>

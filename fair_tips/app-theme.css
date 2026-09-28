@@ -1,0 +1,53 @@
+/* ── Fair Tips app theme ──
+   Re-skins the shared stylesheet (../css/style.css) to match the Fair Tips
+   iOS app: fresh green palette — light sage canvas, deep forest-green accents,
+   grass green as the secondary pop. Loaded AFTER style.css so these win.
+   Scoped to the fair_tips/ pages only. */
+
+:root {
+  --cream:    #eaf1df;  /* light sage — page background */
+  --cream-2:  #dbe8c9;  /* deeper sage for alt sections */
+  --ink:      #2f5d38;  /* deep forest green — dark sections & headings */
+  --ink-deep: #234529;  /* deepest green for gradients */
+  --accent:      #3c7a46;  /* forest green — primary accent (app buttons) */
+  --accent-dark: #2f5d38;  /* darker forest — links & hovers */
+  --accent-soft: #cfe3c0;  /* pale green tint — pills & active nav */
+  --honey:       #8fb87a;  /* app's grass green — secondary / footer links */
+  --muted:       #63755d;  /* gray-green body text */
+  --card-bg:     #ffffff;  /* white cards, like the app's input fields */
+  --border:      #d3e2c0;
+
+  --shadow-soft: 0 10px 30px rgba(47, 93, 56, .10);
+  --shadow-lift: 0 18px 44px rgba(47, 93, 56, .16);
+}
+
+/* Frosted nav matches the new sage background */
+nav { background: rgba(234, 241, 223, .85); }
+nav.scrolled { box-shadow: 0 6px 24px rgba(47, 93, 56, .12); }
+
+/* Footer sits on deep forest green — swap warm-tan text for soft sage */
+footer { color: #c6d6b8; }
+
+/* ── Legal pages (privacy / terms): echo the app's styling ── */
+.privacy-inner h1 { color: var(--ink); }
+.privacy-inner h3 { color: var(--ink); }
+
+/* Section headers get a green accent bar, like the app's selected controls */
+.privacy-inner h2 {
+  color: var(--ink);
+  padding-left: .9rem;
+  border-left: 4px solid var(--accent);
+}
+
+/* "Last updated" rendered as a pale-green tag pill */
+.privacy-inner .last-updated {
+  display: inline-block;
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  font-weight: 600;
+  padding: .35rem .85rem;
+  border-radius: 999px;
+}
+.privacy-inner .last-updated strong { font-weight: 700; }
+
+.privacy-inner a:hover { color: var(--accent); text-decoration: underline; }
