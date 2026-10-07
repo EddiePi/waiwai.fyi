@@ -284,12 +284,29 @@
       .wh-phone { display: none; }
       .wh-phone.center { display: block; width: 200px; transform: none; }
     }
+
+    .wh-peerpush-badge {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      z-index: 2;
+      display: block;
+      line-height: 0;
+      transition: transform .2s ease;
+    }
+    .wh-peerpush-badge:hover { transform: translateY(-2px); }
+    .wh-peerpush-badge img { width: 230px; display: block; }
+
+    @media (max-width: 768px) {
+      .wh-peerpush-badge { top: 1rem; right: 1rem; }
+      .wh-peerpush-badge img { width: 150px; }
+    }
   </style>
 </head>
 <body>
 
   <nav>
-    <a class="nav-logo" href="../index.html"><img class="nav-logo-icon" src="../assets/website/icon-1254x1254.png" alt="Waiwai Studio logo" /><span class="nav-logo-text">Waiwai<span>Studio</span></span></a>
+    <a class="nav-logo" href="../index.html"><img class="nav-logo-icon" width="34" height="34" src="../assets/website/icon-1254x1254.png" alt="Waiwai Studio logo" /><span class="nav-logo-text">Waiwai<span>Studio</span></span></a>
     <ul class="nav-links">
       <li><a href="../index.html">Home</a></li>
       <li><a href="../fair_tips/fair_tips.html">Fair Tips</a></li>
@@ -301,6 +318,9 @@
 
     <!-- ── HERO ── -->
     <section class="wh-hero">
+      <a class="wh-peerpush-badge" href="https://peerpush.com/p/wholistic-recurring-checklist" target="_blank" rel="noopener">
+        <img src="https://peerpush.com/p/wholistic-recurring-checklist/badge.png" alt="Wholistic: recurring checklist on PeerPush" />
+      </a>
       <div class="wh-hero-inner">
         <h1 class="fade-up fade-up-d1">Your recurring tasks,<br/><em>finally organised.</em></h1>
         <p class="wh-hero-sub fade-up fade-up-d2">
