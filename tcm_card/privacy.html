@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策 — 本草卡</title>
+<meta name="description" content="本草卡隐私政策：我们收集哪些信息、如何使用，以及你的选择。">
+<link rel="icon" href="/assets/website/favicon.png" type="image/png">
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
+<style>
+:root {
+  color-scheme: light;
+  --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px; --space-md: 16px; --space-lg: 24px; --space-xl: 40px; --space-2xl: 64px; --space-3xl: 96px;
+  --text-sm: 0.875rem; --text-md: 1rem; --text-lg: 1.25rem;
+  --text-display: clamp(2rem, 3vw + 1rem, 3rem); --text-section: clamp(1.375rem, 1vw + 1rem, 1.75rem);
+  --container: 820px; --gutter: 24px;
+  --color-paper: oklch(97% 0.006 55); --color-cotton: oklch(98.8% 0.0045 80);
+  --color-ink: oklch(21% 0.012 38); --color-ink-2: oklch(29% 0.013 40); --color-muted: oklch(47% 0.013 45);
+  --color-rule: oklch(87% 0.009 55); --color-accent: oklch(74% 0.125 30); --color-accent-2: oklch(54% 0.165 29); --color-focus: oklch(54% 0.17 30);
+  --font-display: "General Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", ui-sans-serif, system-ui, sans-serif;
+  --radius: 8px; --rule-hair: 1px;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html, body { overflow-x: clip; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--color-paper); color: var(--color-ink); font-family: var(--font-display); font-size: var(--text-md); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+a { color: var(--color-accent-2); text-underline-offset: 0.16em; text-decoration-color: var(--color-accent); }
+.container { width: 100%; max-width: var(--container); margin-inline: auto; padding-inline: var(--gutter); }
+
+.nav { border-bottom: var(--rule-hair) solid var(--color-rule); }
+.nav__in { display: flex; align-items: center; justify-content: space-between; gap: var(--space-md); height: 68px; }
+.brand { display: inline-flex; align-items: center; gap: var(--space-xs); font-family: var(--font-display); font-weight: 600; font-size: var(--text-lg); letter-spacing: -0.01em; text-decoration: none; color: var(--color-ink); }
+.brand img { width: 26px; height: 26px; border-radius: 6px; }
+.nav__links { display: flex; gap: var(--space-lg); }
+.nav__links a { font-size: var(--text-sm); color: var(--color-muted); text-decoration: none; }
+.nav__links a:hover { color: var(--color-ink); text-decoration: underline; }
+@media (max-width: 40rem) { .nav__links { display: none; } }
+
+.legal { padding-block: var(--space-2xl) var(--space-3xl); }
+.legal h1 { margin: 0; font-family: var(--font-display); font-weight: 600; font-size: var(--text-display); letter-spacing: -0.01em; line-height: 1.15; }
+.updated { margin-top: var(--space-sm); color: var(--color-muted); font-size: var(--text-sm); }
+.legal h2 { margin: var(--space-2xl) 0 0; font-family: var(--font-display); font-weight: 600; font-size: var(--text-section); line-height: 1.25; }
+.legal h3 { margin: var(--space-lg) 0 0; font-weight: 600; font-size: var(--text-lg); }
+.legal p { margin: var(--space-sm) 0 0; color: var(--color-ink-2); }
+.legal ul { margin: var(--space-sm) 0 0; padding-left: 1.25rem; color: var(--color-ink-2); }
+.legal li { margin-top: var(--space-2xs); }
+.legal .intro { font-size: var(--text-lg); color: var(--color-ink); }
+
+.callout { margin-top: var(--space-lg); padding: var(--space-lg); border-radius: var(--radius); background: color-mix(in oklab, var(--color-accent) 12%, var(--color-cotton)); border: 1px solid color-mix(in oklab, var(--color-accent) 40%, var(--color-rule)); }
+.callout p { color: var(--color-ink); }
+
+.foot { border-top: var(--rule-hair) solid var(--color-rule); padding-block: var(--space-xl); }
+.foot__bar { display: flex; gap: var(--space-lg); flex-wrap: wrap; align-items: center; justify-content: space-between; }
+.foot__links { display: flex; gap: var(--space-lg); flex-wrap: wrap; }
+.foot a { font-size: var(--text-sm); color: var(--color-muted); text-decoration: none; }
+.foot a:hover { color: var(--color-ink); text-decoration: underline; }
+.foot__copy { font-size: var(--text-sm); color: var(--color-muted); }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav__in">
+    <a class="brand" href="tcm_card.html"><img src="../assets/tcm_card/icon.png" alt="本草卡">本草卡</a>
+    <nav class="nav__links" aria-label="法律信息">
+      <a href="tcm_card.html">首页</a>
+      <a href="privacy.html">隐私政策</a>
+      <a href="terms-of-use.html">使用条款</a>
+    </nav>
+  </div>
+</header>
+
+<main class="legal">
+  <div class="container">
+    <h1>隐私政策</h1>
+    <p class="updated"><strong>最后更新：</strong>2026 年 10 月 25 日</p>
+
+    <p class="intro">本草卡（“本 App”）尊重你的隐私。本政策说明我们收集哪些信息、如何使用，以及你拥有的选择。</p>
+
+    <h2>1. 我们收集的信息</h2>
+    <ul>
+      <li><strong>学习数据（保存在本机）：</strong>你创建的卡组、学习进度、“已掌握 / 有疑问”标记、测验记录等均保存在你的设备上，<strong>不会</strong>上传到我们的服务器。</li>
+      <li><strong>匿名标识：</strong>本 App 使用 Firebase 匿名登录生成一个随机的匿名标识符。它不与你的真实身份、姓名、邮箱或 Apple ID 关联。</li>
+      <li><strong>内容纠错反馈：</strong>当你举报某张卡片内容有误时，我们会收到：卡片 ID、卡片版本、你选择的纠错原因、可选的备注文字、上述匿名标识符、App 版本与时间。</li>
+      <li><strong>使用与诊断数据：</strong>我们通过 Firebase Analytics 收集匿名的使用统计（如功能使用情况、稳定性），用于改进产品。</li>
+    </ul>
+
+    <h2>2. 我们如何使用信息</h2>
+    <ul>
+      <li>提供、维护与改进本 App；</li>
+      <li>根据你的反馈修正卡片内容；</li>
+      <li>分析整体使用情况与稳定性。</li>
+    </ul>
+    <p>我们<strong>不会出售</strong>你的个人信息。</p>
+
+    <h2>3. 信息的共享</h2>
+    <p>我们使用 Google Firebase（身份验证、Firestore 数据库、Analytics）作为后端服务。相关数据由 Google 依其隐私政策处理。除法律要求或为保护合法权益外，我们不会向其他第三方披露你的信息。</p>
+
+    <h2>4. 数据留存</h2>
+    <p>本机数据随 App 保留，删除 App 即从设备清除。纠错反馈与分析数据会在实现上述目的所需的期限内留存。</p>
+
+    <h2>5. 安全</h2>
+    <p>我们采取合理的技术与管理措施保护数据。但请注意，任何通过互联网传输或电子存储的方式都无法保证绝对安全。</p>
+
+    <h2>6. 儿童隐私</h2>
+    <p>本 App 面向成人学习者，并非针对 13 岁以下儿童，我们也不会有意收集其个人信息。</p>
+
+    <h2>7. 你的选择与权利</h2>
+    <p>你可以随时停止使用并删除本 App，以清除设备上的本机数据。如需协助或行使适用法律赋予你的权利，请通过下方邮箱联系我们。</p>
+
+    <h2>8. 第三方服务</h2>
+    <p>本 App 使用 Google Firebase（Authentication、Firestore、Analytics）。其数据处理适用
+      <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Google / Firebase 隐私政策</a>。</p>
+
+    <h2>9. 政策变更</h2>
+    <p>我们可能会不时更新本政策。如有重大变更，我们将更新本页顶部的“最后更新”日期。</p>
+
+    <h2>10. 联系我们</h2>
+    <p>如对本隐私政策有任何疑问，请联系：<strong>support@waiwai.fyi</strong></p>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="container foot__bar">
+    <nav class="foot__links" aria-label="法律信息">
+      <a href="tcm_card.html">本草卡首页</a>
+      <a href="terms-of-use.html">使用条款</a>
+    </nav>
+    <p class="foot__copy">© 2026 Aidi Pi · 本草卡</p>
+  </div>
+</footer>
+
+</body>
+</html>
