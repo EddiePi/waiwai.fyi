@@ -5,9 +5,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wholistic — Waiwai</title>
   <meta name="description" content="Wholistic: create checklists from templates for recurring events, set up alerts, share and collaborate with others in real time, and view everything in a calendar. Available on the App Store." />
+  <link rel="canonical" href="https://www.waiwai.fyi/wholistic/" />
   <link rel="icon" href="/assets/website/favicon.png" type="image/png" />
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="app-theme.css" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Waiwai Studio" />
+  <meta property="og:title" content="Wholistic — Recurring Checklist App" />
+  <meta property="og:description" content="Build templates for recurring events, launch checklists in seconds, share and collaborate in real time, set smart alerts, and see everything in a calendar. Available on the App Store." />
+  <meta property="og:url" content="https://www.waiwai.fyi/wholistic/" />
+  <meta property="og:image" content="https://www.waiwai.fyi/assets/wholistic/icon.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Wholistic — Recurring Checklist App" />
+  <meta name="twitter:description" content="Build templates for recurring events, launch checklists in seconds, share and collaborate in real time, set smart alerts, and see everything in a calendar." />
+  <meta name="twitter:image" content="https://www.waiwai.fyi/assets/wholistic/icon.png" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.waiwai.fyi/#organization",
+        "name": "Waiwai Studio",
+        "url": "https://www.waiwai.fyi/",
+        "logo": "https://www.waiwai.fyi/assets/website/icon-1254x1254.png"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://www.waiwai.fyi/wholistic/#app",
+        "name": "Wholistic",
+        "alternateName": "Wholistic: Recurring Checklist",
+        "url": "https://www.waiwai.fyi/wholistic/",
+        "description": "Wholistic lets you build templates for recurring events, spin up checklists in seconds, share them with others, set smart alerts, and see everything laid out in a clean calendar view.",
+        "image": "https://www.waiwai.fyi/assets/wholistic/icon.png",
+        "applicationCategory": "ProductivityApplication",
+        "operatingSystem": "iOS 17.2 or later",
+        "softwareHelp": "https://www.waiwai.fyi/wholistic/faq.html",
+        "publisher": { "@id": "https://www.waiwai.fyi/#organization" },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Free download",
+            "price": "0",
+            "priceCurrency": "USD",
+            "category": "free"
+          },
+          {
+            "@type": "Offer",
+            "name": "Monthly subscription",
+            "price": "2.99",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Annual subscription",
+            "price": "23.99",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Lifetime upgrade",
+            "price": "44.99",
+            "priceCurrency": "USD"
+          }
+        ],
+        "sameAs": [
+          "https://apps.apple.com/us/app/wholistic-recurring-checklist/id6758641339"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.waiwai.fyi/wholistic/#webpage",
+        "url": "https://www.waiwai.fyi/wholistic/",
+        "name": "Wholistic — Waiwai",
+        "isPartOf": { "@id": "https://www.waiwai.fyi/#organization" },
+        "about": { "@id": "https://www.waiwai.fyi/wholistic/#app" }
+      }
+    ]
+  }
+  </script>
   <style>
     /* ── WHOLISTIC PAGE-SPECIFIC STYLES ── */
 
@@ -525,6 +607,9 @@
         </svg>
         Download on the App Store
       </a>
+      <p class="fade-up fade-up-d3" style="margin-top: 1.6rem; font-size: .9rem;">
+        <a href="faq.html" style="color: #a0c8b0; text-decoration: underline;">Have questions? Read the FAQ →</a>
+      </p>
     </section>
 
   </main>
@@ -532,6 +617,7 @@
   <footer>
     <p>
       &copy; <span id="yr"></span> Waiwai. All rights reserved. &nbsp;|&nbsp;
+      <a href="faq.html">FAQ</a> &nbsp;|&nbsp;
       <a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp;
       <a href="terms-of-use.html">Terms of Use</a>
     </p>
